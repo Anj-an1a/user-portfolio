@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PORTFOLIO</h1>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#edit-profile">Edit Profile</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile Page -->
+  <section id="profile" class="page">
+    <div class="profile-content">
+      <div class="profile-info">
+        <img src="c:\Users\anjana.kaimal\Downloads\ANJANA PIC.jpeg" alt="Profile Picture">
+        <h2>Anjana S Kaimal</h2>
+        <a href="#email">skaimalanjana@gmail.com</a><br>
+        <a href="#phone">Contact : 9778318328</a>
+        <h4>ID : HSK-1<br>Designation : Intern</h4>
+        
+        <p>As an individual with a distinctive outlook, I bring forth a fresh and innovative approach to every project I undertake. My diverse background, enriched by a range of life experiences, has sculpted me into a versatile and adaptable individual. With a passion for exploring new horizons and a keen eye for originality, I constantly seek opportunities for personal growth and creative expression. Embracing challenges as avenues for learning, I am driven by a deep dedication to continuously expand my skills and knowledge. This fervor for exploration extends beyond the conventional, as I actively seek out unconventional ideas and perspectives to bring unique solutions to fruition. Committed to the pursuit of excellence, I approach each endeavor with enthusiasm and a relentless pursuit of innovation, striving to leave a lasting impact through my work.</p>
+      </div>
+      <div class="social-links">
+
+
+
+        
+        <a href="https://www.linkedin.com/in/anjana-s-kaimal-008340266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLDzwcnAbQmOW797ebS7Giw%3D%3D" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Anj-an1a/user-portfolio.git" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Edit Profile Page -->
+  <section id="edit-profile" class="page">
+    <h2>Edit Profile</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="username">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="email" >
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="password" >
+
+      
+      <button type="submit">Save Changes</button>
+    </form>
+  </section>
+
+  <!-- Projects Page -->
+  <section id="projects" class="page">
+    <h2>Projects</h2>
+    
+      <div class="project">
+        
+        <h3>LEARNING PLATFORM FOR DEAF STUDENTS</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Asl_alphabet_gallaudet.svg/240px-Asl_alphabet_gallaudet.svg.png" alt="Sign language recognition">
+        <p>The learning platform aims to empower deaf students with a comprehensive tool for sign language recognition, utilizing Python, OpenCV, and Convolutional Neural Networks (CNN). This innovative platform offers real-time interpretation of sign language gestures into corresponding numbers and alphabets, enhancing communication and educational accessibility. Users benefit from interactive learning modules, quizzes, and personalized learning paths, fostering independence and confidence. With a user-friendly interface and potential integration with Flask for web accessibility, the project is a step towards inclusive education, providing deaf individuals with a tailored learning experience and facilitating easier communication with non-signing individuals. Future plans include expanding the gesture repertoire, multi-language support, and integration with existing learning management systems for broader adoption and impact.</p>
+        <a href="#project-detail">View Details</a>
+      </div>
+      
+    
+  </section>
+
+  <!-- Project Detail View -->
+  <section id="project-detail" class="page">
+    <h2>LEARNING PLATFORM FOR DEAF STUDENTS</h2>
+    
+    <p>The project begins with setting up OpenCV, a robust computer vision library, in the Python environment. Using OpenCV, the webcam or camera is initialized to capture live video streams. Hand detection algorithms, such as background subtraction or Haar cascades, are implemented to identify hands in the video feed. Next, regions of interest (ROIs) are defined on the captured frames where hand gestures will be recognized. Simultaneously, a dataset of sign language gestures, focusing on numbers and alphabets, is collected for training the model. The dataset undergoes image preprocessing steps, including resizing, normalization, and grayscale conversion, to prepare it for training. Labels are then assigned to each image, corresponding to the sign gesture it represents (e.g., 'A' for alphabet 'A', '1' for number '1'). Moving on to the CNN model training, a custom architecture is designed to effectively recognize sign language gestures. The model is trained using the prepared dataset, optimizing for accuracy in recognizing a variety of hand signs. Once the model is trained, it is integrated into a Flask web application. The Flask framework allows for the development of an intuitive and user-friendly learning platform. Users can interact with the platform by displaying hand gestures in front of the webcam, which are then recognized in real-time by the trained CNN model. The platform offers interactive learning modules, quizzes, and personalized learning paths, enhancing the educational experience for deaf students.Future developments entail broadening the range of recognized gestures, introducing multi-language compatibility, and integrating with established learning management systems to extend the platform's reach and effectiveness.</p>
+    <a href="#projects">Back to Projects</a>
+  </section>
+
+  <!-- About Me & Resume Section -->
+  <section id="about" class="page">
+    
+    <h3>Resume</h3>
+    <a href="c:\Users\anjana.kaimal\Downloads\Anjana S Kaimal resume4.pdf" target="_blank">Download Resume</a>
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      
+    </ul>
+  </section>
+
+  <!-- Contact & Message Form -->
+  <section id="contact" class="page">
+    <h2>Contact Me</h2>
+    
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  
+
+</body>
+</html>
